@@ -14,30 +14,36 @@ namespace Gatari_v1
 {
     public partial class Form1 : Form
     {
+        //SaveData list and PathSaveData create
         List<DataCheck> checkers = new List<DataCheck>();
-        
+        string fileName1 = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), @"Gatari\");
+        string fileName2 = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), @"Gatari\Save.xml");
+
+        //Save irectory create
         public Form1()
         {
             InitializeComponent();
+            if (!Directory.Exists(fileName1))
+                Directory.CreateDirectory(fileName1);
         }
 
         //Save on closing
         private void Form1_FormClosing_1(object sender, FormClosingEventArgs e)
         {
-            using (FileStream fStream = new FileStream("Save.xml", FileMode.Create, FileAccess.Write, FileShare.None))
+            using (FileStream fStream = new FileStream(fileName2, FileMode.Create, FileAccess.Write, FileShare.None))
             {
                 XmlSerializer xmlFormat = new XmlSerializer(typeof(List<DataCheck>));
                 xmlFormat.Serialize(fStream, checkers);
             }
         }
 
-        #region(Load Restore)
+        //Load Restore
         private void Form1_Load(object sender, EventArgs e)
         {
             XmlSerializer xmlFormatP = new XmlSerializer(typeof(List<DataCheck>));
             try
             {
-                using (FileStream fStream = new FileStream("Save.xml", FileMode.OpenOrCreate, FileAccess.Read, FileShare.None))
+                using (FileStream fStream = new FileStream(fileName2, FileMode.OpenOrCreate, FileAccess.Read, FileShare.None))
                 {
                     checkers.AddRange((List<DataCheck>)xmlFormatP.Deserialize(fStream));
                 }
@@ -87,8 +93,6 @@ namespace Gatari_v1
                 checkers.Add(new DataCheck() { Name = "ODark", Chk = false });
                 checkers.Add(new DataCheck() { Name = "KReverse", Chk = false });
                 checkers.Add(new DataCheck() { Name = "SDevil", Chk = false });
-
-
             }
             if (checkers[checkers.FindIndex(a => a.Name == "KVamp")].Chk == true) KVamp3.Checked = true;
             if (checkers[checkers.FindIndex(a => a.Name == "KStone")].Chk == true) KStone3.Checked = true;
@@ -130,7 +134,6 @@ namespace Gatari_v1
             if (checkers[checkers.FindIndex(a => a.Name == "KReverse")].Chk == true) KReverse3.Checked = true;
             if (checkers[checkers.FindIndex(a => a.Name == "SDevil")].Chk == true) SDevil3.Checked = true;
         }
-        #endregion
 
         #region(Check Restore)
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -154,7 +157,6 @@ namespace Gatari_v1
                 checkers[checkers.FindIndex(a => a.Name == "KVamp")].Chk = false;
             }
         }
-
         private void KStone3_CheckedChanged(object sender, EventArgs e)
         {
             if (KStone3.Checked == true)
@@ -176,7 +178,6 @@ namespace Gatari_v1
                 checkers[checkers.FindIndex(a => a.Name == "KStone")].Chk = false;
             }
         }
-
         private void TFamily3_CheckedChanged(object sender, EventArgs e)
         {
             if (TFamily3.Checked == true)
@@ -198,7 +199,6 @@ namespace Gatari_v1
                 checkers[checkers.FindIndex(a => a.Name == "TFamily")].Chk = false;
             }
         }
-
         private void HCrab3_CheckedChanged(object sender, EventArgs e)
         {
             if (HCrab3.Checked == true)
@@ -220,7 +220,6 @@ namespace Gatari_v1
                 checkers[checkers.FindIndex(a => a.Name == "HCrab")].Chk = false;
             }
         }
-
         private void KFlower3_CheckedChanged(object sender, EventArgs e)
         {
             if (KFlower3.Checked == true)
@@ -242,7 +241,6 @@ namespace Gatari_v1
                 checkers[checkers.FindIndex(a => a.Name == "KFlower")].Chk = false;
             }
         }
-
         private void MSnail3_CheckedChanged(object sender, EventArgs e)
         {
             if (MSnail3.Checked == true)
@@ -264,7 +262,6 @@ namespace Gatari_v1
                 checkers[checkers.FindIndex(a => a.Name == "MSnail")].Chk = false;
             }
         }
-
         private void SMonkey3_CheckedChanged(object sender, EventArgs e)
         {
             if (SMonkey3.Checked == true)
@@ -286,7 +283,6 @@ namespace Gatari_v1
                 checkers[checkers.FindIndex(a => a.Name == "SMonkey")].Chk = false;
             }
         }
-
         private void NSnake3_CheckedChanged(object sender, EventArgs e)
         {
             if (NSnake3.Checked == true)
@@ -308,7 +304,6 @@ namespace Gatari_v1
                 checkers[checkers.FindIndex(a => a.Name == "NSnake")].Chk = false;
             }
         }
-
         private void TCat3_CheckedChanged(object sender, EventArgs e)
         {
             if (TCat3.Checked == true)
@@ -330,7 +325,6 @@ namespace Gatari_v1
                 checkers[checkers.FindIndex(a => a.Name == "TCat")].Chk = false;
             }
         }
-
         private void KSand3_CheckedChanged(object sender, EventArgs e)
         {
             if (SMonkey3.Checked == true)
@@ -352,7 +346,6 @@ namespace Gatari_v1
                 checkers[checkers.FindIndex(a => a.Name == "KSand")].Chk = false;
             }
         }
-
         private void KWater3_CheckedChanged(object sender, EventArgs e)
         {
             if (KWater3.Checked == true)
@@ -374,7 +367,6 @@ namespace Gatari_v1
                 checkers[checkers.FindIndex(a => a.Name == "KWater")].Chk = false;
             }
         }
-
         private void KBee3_CheckedChanged(object sender, EventArgs e)
         {
             if (KBee3.Checked == true)
@@ -396,7 +388,6 @@ namespace Gatari_v1
                 checkers[checkers.FindIndex(a => a.Name == "KBee")].Chk = false;
             }
         }
-
         private void KWind3_CheckedChanged(object sender, EventArgs e)
         {
             if (KWind3.Checked == true)
@@ -418,7 +409,6 @@ namespace Gatari_v1
                 checkers[checkers.FindIndex(a => a.Name == "KWind")].Chk = false;
             }
         }
-
         private void TPhoenix3_CheckedChanged(object sender, EventArgs e)
         {
             if (TPhoenix3.Checked == true)
@@ -440,7 +430,6 @@ namespace Gatari_v1
                 checkers[checkers.FindIndex(a => a.Name == "TPhoenix")].Chk = false;
             }
         }
-
         private void MJiangshi3_CheckedChanged(object sender, EventArgs e)
         {
             if (MJiangshi3.Checked == true)
@@ -462,7 +451,6 @@ namespace Gatari_v1
                 checkers[checkers.FindIndex(a => a.Name == "MJiangshi")].Chk = false;
             }
         }
-
         private void STime3_CheckedChanged(object sender, EventArgs e)
         {
             if (STime3.Checked == true)
@@ -484,7 +472,6 @@ namespace Gatari_v1
                 checkers[checkers.FindIndex(a => a.Name == "STime")].Chk = false;
             }
         }
-
         private void SMail3_CheckedChanged(object sender, EventArgs e)
         {
             if (SMail3.Checked == true)
@@ -506,7 +493,6 @@ namespace Gatari_v1
                 checkers[checkers.FindIndex(a => a.Name == "SMail")].Chk = false;
             }
         }
-
         private void TTiger3_CheckedChanged(object sender, EventArgs e)
         {
             if (TTiger3.Checked == true)
@@ -528,7 +514,6 @@ namespace Gatari_v1
                 checkers[checkers.FindIndex(a => a.Name == "TTiger")].Chk = false;
             }
         }
-
         private void KTree3_CheckedChanged(object sender, EventArgs e)
         {
             if (KTree3.Checked == true)
@@ -550,7 +535,6 @@ namespace Gatari_v1
                 checkers[checkers.FindIndex(a => a.Name == "KTree")].Chk = false;
             }
         }
-
         private void KTea3_CheckedChanged(object sender, EventArgs e)
         {
             if (KTea3.Checked == true)
@@ -572,7 +556,6 @@ namespace Gatari_v1
                 checkers[checkers.FindIndex(a => a.Name == "KTea")].Chk = false;
             }
         }
-
         private void OFormula3_CheckedChanged(object sender, EventArgs e)
         {
             if (OFormula3.Checked == true)
@@ -594,7 +577,6 @@ namespace Gatari_v1
                 checkers[checkers.FindIndex(a => a.Name == "OFormula")].Chk = false;
             }
         }
-
         private void SRiddle3_CheckedChanged(object sender, EventArgs e)
         {
             if (SRiddle3.Checked == true)
@@ -616,7 +598,6 @@ namespace Gatari_v1
                 checkers[checkers.FindIndex(a => a.Name == "SRiddle")].Chk = false;
             }
         }
-
         private void SLost3_CheckedChanged(object sender, EventArgs e)
         {
             if (SLost3.Checked == true)
@@ -638,7 +619,6 @@ namespace Gatari_v1
                 checkers[checkers.FindIndex(a => a.Name == "SLost")].Chk = false;
             }
         }
-
         private void NMedusa3_CheckedChanged(object sender, EventArgs e)
         {
             if (NMedusa3.Checked == true)
@@ -660,7 +640,6 @@ namespace Gatari_v1
                 checkers[checkers.FindIndex(a => a.Name == "NMedusa")].Chk = false;
             }
         }
-
         private void KMountain3_CheckedChanged(object sender, EventArgs e)
         {
             if (KMountain3.Checked == true)
@@ -682,7 +661,6 @@ namespace Gatari_v1
                 checkers[checkers.FindIndex(a => a.Name == "KMountain")].Chk = false;
             }
         }
-
         private void NMedusaa3_CheckedChanged(object sender, EventArgs e)
         {
             if (NMedusaa3.Checked == true)
@@ -704,7 +682,6 @@ namespace Gatari_v1
                 checkers[checkers.FindIndex(a => a.Name == "NMedusaa")].Chk = false;
             }
         }
-
         private void KTorus3_CheckedChanged(object sender, EventArgs e)
         {
             if (KTorus3.Checked == true)
@@ -726,7 +703,6 @@ namespace Gatari_v1
                 checkers[checkers.FindIndex(a => a.Name == "KTorus")].Chk = false;
             }
         }
-
         private void HEnd3_CheckedChanged(object sender, EventArgs e)
         {
             if (HEnd3.Checked == true)
@@ -748,7 +724,6 @@ namespace Gatari_v1
                 checkers[checkers.FindIndex(a => a.Name == "HEnd")].Chk = false;
             }
         }
-
         private void KSeed3_CheckedChanged(object sender, EventArgs e)
         {
             if (KSeed3.Checked == true)
@@ -770,7 +745,6 @@ namespace Gatari_v1
                 checkers[checkers.FindIndex(a => a.Name == "KSeed")].Chk = false;
             }
         }
-
         private void HEndd3_CheckedChanged(object sender, EventArgs e)
         {
             if (HEndd3.Checked == true)
@@ -792,7 +766,6 @@ namespace Gatari_v1
                 checkers[checkers.FindIndex(a => a.Name == "HEndd")].Chk = false;
             }
         }
-
         private void YDoll3_CheckedChanged(object sender, EventArgs e)
         {
             if (YDoll3.Checked == true)
@@ -814,7 +787,6 @@ namespace Gatari_v1
                 checkers[checkers.FindIndex(a => a.Name == "YDoll")].Chk = false;
             }
         }
-
         private void KSeedd3_CheckedChanged(object sender, EventArgs e)
         {
             if (KSeedd3.Checked == true)
@@ -836,7 +808,6 @@ namespace Gatari_v1
                 checkers[checkers.FindIndex(a => a.Name == "KSeedd")].Chk = false;
             }
         }
-
         private void KNothing3_CheckedChanged(object sender, EventArgs e)
         {
             if (KNothing3.Checked == true)
@@ -858,7 +829,6 @@ namespace Gatari_v1
                 checkers[checkers.FindIndex(a => a.Name == "KNothing")].Chk = false;
             }
         }
-
         private void KDead3_CheckedChanged(object sender, EventArgs e)
         {
             if (KDead3.Checked == true)
@@ -880,7 +850,6 @@ namespace Gatari_v1
                 checkers[checkers.FindIndex(a => a.Name == "KDead")].Chk = false;
             }
         }
-
         private void MHell3_CheckedChanged(object sender, EventArgs e)
         {
             if (MHell3.Checked == true)
@@ -902,7 +871,6 @@ namespace Gatari_v1
                 checkers[checkers.FindIndex(a => a.Name == "MHell")].Chk = false;
             }
         }
-
         private void HRendezvous3_CheckedChanged(object sender, EventArgs e)
         {
             if (HRendezvous3.Checked == true)
@@ -924,7 +892,6 @@ namespace Gatari_v1
                 checkers[checkers.FindIndex(a => a.Name == "HRendezvous")].Chk = false;
             }
         }
-
         private void ODark3_CheckedChanged(object sender, EventArgs e)
         {
             if (ODark3.Checked == true)
@@ -946,7 +913,6 @@ namespace Gatari_v1
                 checkers[checkers.FindIndex(a => a.Name == "ODark")].Chk = false;
             }
         }
-
         private void KReverse3_CheckedChanged(object sender, EventArgs e)
         {
             if (KReverse3.Checked == true)
@@ -968,7 +934,6 @@ namespace Gatari_v1
                 checkers[checkers.FindIndex(a => a.Name == "KReverse")].Chk = false;
             }
         }
-
         private void SDevil3_CheckedChanged(object sender, EventArgs e)
         {
             if (SDevil3.Checked == true)
@@ -989,88 +954,75 @@ namespace Gatari_v1
                 SDevil3.Text = "Не просмотрено";
                 checkers[checkers.FindIndex(a => a.Name == "SDevil")].Chk = false;
             }
-        }
+        }        
         #endregion
 
-        #region(OPs Click)
+        #region(OPs/EDs Click)
         private void KVamp_MouseClick(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right)
                 System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=1roUrSIHSmc");
         }
-
         private void KStone_MouseClick(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right)
                 System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=QcI1QoOseGo");
         }
-
         private void TFamily_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
                 System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=tNWSdPCNSPg");
         }
-
         private void TFamily_MouseClick(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right)
                 System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=vfltbkdSBUM");
         }
-
         private void HCrab_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
                 System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=uVuJiunPo4E");
         }
-
         private void MSnail_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
                 System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=2OC6ARG6fZA"); 
         }
-
         private void SMonkey_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
                 System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=_NiUoFOtiqE");
         }
-
         private void NSnake_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
                 System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=PiauQ7P7mtQ");
         }
-
         private void TCat_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
                 System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=9HwdeZ6SqcI");
         }
-
         private void TCat_MouseClick(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right)
                 System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=HBT7o-o8zjA");
         }
-
         private void KBee_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
                 System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=-HTGOn7KVJ8");
         }
-
         private void KBee_MouseClick(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right)
                 System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=ZPn_i1xHsAQ");
         }
-
         private void TPhoenix_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
                 System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=Y8SwZJAUiW4");
         }
-
         private void MJiangshi_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -1078,7 +1030,6 @@ namespace Gatari_v1
             if (e.Button == MouseButtons.Right)
                 System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=_OgmOXFRWS0");
         }
-
         private void STime_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -1086,19 +1037,16 @@ namespace Gatari_v1
             if (e.Button == MouseButtons.Right)
                 System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=xluEix54H4I"); 
         }
-
         private void SMail_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
                 System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=NpoKXPEAEIs");
         }
-
         private void SMail_MouseClick(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right)
                 System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=Ho33AGH1lEE");
         }
-
         private void TTiger_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -1106,31 +1054,26 @@ namespace Gatari_v1
             if (e.Button == MouseButtons.Right)
                 System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=EstxiXkXGik"); 
         }
-
         private void OFormula_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
                 System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=PWXNvCg3uT0");
         }
-
         private void OFormula_MouseClick(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right)
                 System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=ExWNledkLj0");
         }
-
         private void SRiddle_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
                 System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=jePBN9qPPf0");
         }
-
         private void SLost_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
                 System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=Nha-DeZEV0o");
         }
-
         private void NMedusa_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -1138,37 +1081,31 @@ namespace Gatari_v1
             if (e.Button == MouseButtons.Left)
                 System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=4sLKiV2DU6A");
         }
-
         private void HEnd_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
                 System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=T78cA9r1P50");
         }
-
         private void HEnd_MouseClick(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right)
                 System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=6UU2LFYK83M");
         }
-
         private void HEndd_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
                 System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=nvIEztK_gwQ");
         }
-
         private void YDoll_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
                 System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=vRVEZq8plc0");
         }
-
         private void YDoll_MouseClick(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right)
                 System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=VE-bLR5UKGc");
         }
-
         private void MHell_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -1176,7 +1113,6 @@ namespace Gatari_v1
             else
                 System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=uUaXfxKmVe4");
         }
-
         private void HRendezvous_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -1184,7 +1120,6 @@ namespace Gatari_v1
             else
                 System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=YXVG4iMGTmg");
         }
-
         private void ODark_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -1192,7 +1127,6 @@ namespace Gatari_v1
             else
                 System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=b5llyR2PKMA");
         }
-
         private void KReverse_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -1200,7 +1134,6 @@ namespace Gatari_v1
             else
                 System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=rAqiXw7J3O0");
         }
-
         private void SDevil_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
