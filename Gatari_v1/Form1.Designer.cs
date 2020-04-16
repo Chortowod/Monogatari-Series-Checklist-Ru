@@ -130,6 +130,7 @@
             this.KMountain3 = new System.Windows.Forms.CheckBox();
             this.KMountain2 = new System.Windows.Forms.Label();
             this.label160 = new System.Windows.Forms.Label();
+            this.label161 = new System.Windows.Forms.Label();
             this.KMountain1 = new System.Windows.Forms.Label();
             this.KMountain = new System.Windows.Forms.LinkLabel();
             this.NMedusa3 = new System.Windows.Forms.CheckBox();
@@ -304,12 +305,11 @@
             this.label11 = new System.Windows.Forms.Label();
             this.KStone1 = new System.Windows.Forms.Label();
             this.KStone = new System.Windows.Forms.LinkLabel();
+            this.label9 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.помощьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.горячиеКлавишиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label161 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -396,6 +396,7 @@
             // KVamp3
             // 
             this.KVamp3.AutoSize = true;
+            this.KVamp3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.KVamp3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.KVamp3.Location = new System.Drawing.Point(1200, 9);
             this.KVamp3.Name = "KVamp3";
@@ -403,7 +404,7 @@
             this.KVamp3.TabIndex = 23;
             this.KVamp3.Text = "Не просмотрено";
             this.KVamp3.UseVisualStyleBackColor = true;
-            this.KVamp3.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.KVamp3.CheckedChanged += new System.EventHandler(this.checkBox24_CheckedChanged);
             // 
             // panel1
             // 
@@ -720,6 +721,7 @@
             // SDevil3
             // 
             this.SDevil3.AutoSize = true;
+            this.SDevil3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SDevil3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SDevil3.Location = new System.Drawing.Point(1200, 2030);
             this.SDevil3.Name = "SDevil3";
@@ -727,7 +729,7 @@
             this.SDevil3.TabIndex = 368;
             this.SDevil3.Text = "Не просмотрено";
             this.SDevil3.UseVisualStyleBackColor = true;
-            this.SDevil3.CheckedChanged += new System.EventHandler(this.SDevil3_CheckedChanged);
+            this.SDevil3.CheckedChanged += new System.EventHandler(this.checkBox24_CheckedChanged);
             // 
             // SDevil2
             // 
@@ -854,6 +856,7 @@
             // KReverse3
             // 
             this.KReverse3.AutoSize = true;
+            this.KReverse3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.KReverse3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.KReverse3.Location = new System.Drawing.Point(1200, 1944);
             this.KReverse3.Name = "KReverse3";
@@ -861,7 +864,7 @@
             this.KReverse3.TabIndex = 356;
             this.KReverse3.Text = "Не просмотрено";
             this.KReverse3.UseVisualStyleBackColor = true;
-            this.KReverse3.CheckedChanged += new System.EventHandler(this.KReverse3_CheckedChanged);
+            this.KReverse3.CheckedChanged += new System.EventHandler(this.checkBox24_CheckedChanged);
             // 
             // KReverse2
             // 
@@ -910,6 +913,7 @@
             // ODark3
             // 
             this.ODark3.AutoSize = true;
+            this.ODark3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ODark3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ODark3.Location = new System.Drawing.Point(1200, 1901);
             this.ODark3.Name = "ODark3";
@@ -917,7 +921,7 @@
             this.ODark3.TabIndex = 350;
             this.ODark3.Text = "Не просмотрено";
             this.ODark3.UseVisualStyleBackColor = true;
-            this.ODark3.CheckedChanged += new System.EventHandler(this.ODark3_CheckedChanged);
+            this.ODark3.CheckedChanged += new System.EventHandler(this.checkBox24_CheckedChanged);
             // 
             // ODark2
             // 
@@ -966,6 +970,7 @@
             // HRendezvous3
             // 
             this.HRendezvous3.AutoSize = true;
+            this.HRendezvous3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.HRendezvous3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.HRendezvous3.Location = new System.Drawing.Point(1200, 1858);
             this.HRendezvous3.Name = "HRendezvous3";
@@ -973,7 +978,7 @@
             this.HRendezvous3.TabIndex = 344;
             this.HRendezvous3.Text = "Не просмотрено";
             this.HRendezvous3.UseVisualStyleBackColor = true;
-            this.HRendezvous3.CheckedChanged += new System.EventHandler(this.HRendezvous3_CheckedChanged);
+            this.HRendezvous3.CheckedChanged += new System.EventHandler(this.checkBox24_CheckedChanged);
             // 
             // HRendezvous2
             // 
@@ -1022,6 +1027,7 @@
             // MHell3
             // 
             this.MHell3.AutoSize = true;
+            this.MHell3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MHell3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.MHell3.Location = new System.Drawing.Point(1200, 1815);
             this.MHell3.Name = "MHell3";
@@ -1029,7 +1035,7 @@
             this.MHell3.TabIndex = 338;
             this.MHell3.Text = "Не просмотрено";
             this.MHell3.UseVisualStyleBackColor = true;
-            this.MHell3.CheckedChanged += new System.EventHandler(this.MHell3_CheckedChanged);
+            this.MHell3.CheckedChanged += new System.EventHandler(this.checkBox24_CheckedChanged);
             // 
             // MHell2
             // 
@@ -1078,6 +1084,7 @@
             // KDead3
             // 
             this.KDead3.AutoSize = true;
+            this.KDead3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.KDead3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.KDead3.Location = new System.Drawing.Point(1200, 1772);
             this.KDead3.Name = "KDead3";
@@ -1085,7 +1092,7 @@
             this.KDead3.TabIndex = 332;
             this.KDead3.Text = "Не просмотрено";
             this.KDead3.UseVisualStyleBackColor = true;
-            this.KDead3.CheckedChanged += new System.EventHandler(this.KDead3_CheckedChanged);
+            this.KDead3.CheckedChanged += new System.EventHandler(this.checkBox24_CheckedChanged);
             // 
             // KDead2
             // 
@@ -1165,6 +1172,7 @@
             // KNothing3
             // 
             this.KNothing3.AutoSize = true;
+            this.KNothing3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.KNothing3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.KNothing3.Location = new System.Drawing.Point(1200, 1729);
             this.KNothing3.Name = "KNothing3";
@@ -1172,7 +1180,7 @@
             this.KNothing3.TabIndex = 321;
             this.KNothing3.Text = "Не просмотрено";
             this.KNothing3.UseVisualStyleBackColor = true;
-            this.KNothing3.CheckedChanged += new System.EventHandler(this.KNothing3_CheckedChanged);
+            this.KNothing3.CheckedChanged += new System.EventHandler(this.checkBox24_CheckedChanged);
             // 
             // KNothing2
             // 
@@ -1231,6 +1239,7 @@
             // KSeedd3
             // 
             this.KSeedd3.AutoSize = true;
+            this.KSeedd3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.KSeedd3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.KSeedd3.Location = new System.Drawing.Point(1200, 1686);
             this.KSeedd3.Name = "KSeedd3";
@@ -1238,7 +1247,7 @@
             this.KSeedd3.TabIndex = 315;
             this.KSeedd3.Text = "Не просмотрено";
             this.KSeedd3.UseVisualStyleBackColor = true;
-            this.KSeedd3.CheckedChanged += new System.EventHandler(this.KSeedd3_CheckedChanged);
+            this.KSeedd3.CheckedChanged += new System.EventHandler(this.checkBox24_CheckedChanged);
             // 
             // KSeedd2
             // 
@@ -1288,6 +1297,7 @@
             // YDoll3
             // 
             this.YDoll3.AutoSize = true;
+            this.YDoll3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.YDoll3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.YDoll3.Location = new System.Drawing.Point(1200, 1643);
             this.YDoll3.Name = "YDoll3";
@@ -1295,7 +1305,7 @@
             this.YDoll3.TabIndex = 309;
             this.YDoll3.Text = "Не просмотрено";
             this.YDoll3.UseVisualStyleBackColor = true;
-            this.YDoll3.CheckedChanged += new System.EventHandler(this.YDoll3_CheckedChanged);
+            this.YDoll3.CheckedChanged += new System.EventHandler(this.checkBox24_CheckedChanged);
             // 
             // YDoll2
             // 
@@ -1387,6 +1397,7 @@
             // HEndd3
             // 
             this.HEndd3.AutoSize = true;
+            this.HEndd3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.HEndd3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.HEndd3.Location = new System.Drawing.Point(1200, 1600);
             this.HEndd3.Name = "HEndd3";
@@ -1394,7 +1405,7 @@
             this.HEndd3.TabIndex = 294;
             this.HEndd3.Text = "Не просмотрено";
             this.HEndd3.UseVisualStyleBackColor = true;
-            this.HEndd3.CheckedChanged += new System.EventHandler(this.HEndd3_CheckedChanged);
+            this.HEndd3.CheckedChanged += new System.EventHandler(this.checkBox24_CheckedChanged);
             // 
             // HEndd2
             // 
@@ -1454,6 +1465,7 @@
             // KSeed3
             // 
             this.KSeed3.AutoSize = true;
+            this.KSeed3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.KSeed3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.KSeed3.Location = new System.Drawing.Point(1200, 1557);
             this.KSeed3.Name = "KSeed3";
@@ -1461,7 +1473,7 @@
             this.KSeed3.TabIndex = 288;
             this.KSeed3.Text = "Не просмотрено";
             this.KSeed3.UseVisualStyleBackColor = true;
-            this.KSeed3.CheckedChanged += new System.EventHandler(this.KSeed3_CheckedChanged);
+            this.KSeed3.CheckedChanged += new System.EventHandler(this.checkBox24_CheckedChanged);
             // 
             // KSeed2
             // 
@@ -1511,6 +1523,7 @@
             // HEnd3
             // 
             this.HEnd3.AutoSize = true;
+            this.HEnd3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.HEnd3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.HEnd3.Location = new System.Drawing.Point(1200, 1514);
             this.HEnd3.Name = "HEnd3";
@@ -1518,7 +1531,7 @@
             this.HEnd3.TabIndex = 282;
             this.HEnd3.Text = "Не просмотрено";
             this.HEnd3.UseVisualStyleBackColor = true;
-            this.HEnd3.CheckedChanged += new System.EventHandler(this.HEnd3_CheckedChanged);
+            this.HEnd3.CheckedChanged += new System.EventHandler(this.checkBox24_CheckedChanged);
             // 
             // HEnd2
             // 
@@ -1568,6 +1581,7 @@
             // KTorus3
             // 
             this.KTorus3.AutoSize = true;
+            this.KTorus3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.KTorus3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.KTorus3.Location = new System.Drawing.Point(1200, 1471);
             this.KTorus3.Name = "KTorus3";
@@ -1575,7 +1589,7 @@
             this.KTorus3.TabIndex = 276;
             this.KTorus3.Text = "Не просмотрено";
             this.KTorus3.UseVisualStyleBackColor = true;
-            this.KTorus3.CheckedChanged += new System.EventHandler(this.KTorus3_CheckedChanged);
+            this.KTorus3.CheckedChanged += new System.EventHandler(this.checkBox24_CheckedChanged);
             // 
             // KTorus2
             // 
@@ -1625,6 +1639,7 @@
             // NMedusaa3
             // 
             this.NMedusaa3.AutoSize = true;
+            this.NMedusaa3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.NMedusaa3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.NMedusaa3.Location = new System.Drawing.Point(1200, 1428);
             this.NMedusaa3.Name = "NMedusaa3";
@@ -1632,7 +1647,7 @@
             this.NMedusaa3.TabIndex = 270;
             this.NMedusaa3.Text = "Не просмотрено";
             this.NMedusaa3.UseVisualStyleBackColor = true;
-            this.NMedusaa3.CheckedChanged += new System.EventHandler(this.NMedusaa3_CheckedChanged);
+            this.NMedusaa3.CheckedChanged += new System.EventHandler(this.checkBox24_CheckedChanged);
             // 
             // NMedusaa2
             // 
@@ -1680,6 +1695,7 @@
             // KMountain3
             // 
             this.KMountain3.AutoSize = true;
+            this.KMountain3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.KMountain3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.KMountain3.Location = new System.Drawing.Point(1200, 1385);
             this.KMountain3.Name = "KMountain3";
@@ -1687,7 +1703,7 @@
             this.KMountain3.TabIndex = 264;
             this.KMountain3.Text = "Не просмотрено";
             this.KMountain3.UseVisualStyleBackColor = true;
-            this.KMountain3.CheckedChanged += new System.EventHandler(this.KMountain3_CheckedChanged);
+            this.KMountain3.CheckedChanged += new System.EventHandler(this.checkBox24_CheckedChanged);
             // 
             // KMountain2
             // 
@@ -1708,6 +1724,16 @@
             this.label160.Name = "label160";
             this.label160.Size = new System.Drawing.Size(1001, 2);
             this.label160.TabIndex = 262;
+            // 
+            // label161
+            // 
+            this.label161.BackColor = System.Drawing.Color.Lime;
+            this.label161.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label161.ForeColor = System.Drawing.Color.DarkGray;
+            this.label161.Location = new System.Drawing.Point(413, 1419);
+            this.label161.Name = "label161";
+            this.label161.Size = new System.Drawing.Size(1001, 2);
+            this.label161.TabIndex = 261;
             // 
             // KMountain1
             // 
@@ -1737,6 +1763,7 @@
             // NMedusa3
             // 
             this.NMedusa3.AutoSize = true;
+            this.NMedusa3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.NMedusa3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.NMedusa3.Location = new System.Drawing.Point(1200, 1342);
             this.NMedusa3.Name = "NMedusa3";
@@ -1744,7 +1771,7 @@
             this.NMedusa3.TabIndex = 258;
             this.NMedusa3.Text = "Не просмотрено";
             this.NMedusa3.UseVisualStyleBackColor = true;
-            this.NMedusa3.CheckedChanged += new System.EventHandler(this.NMedusa3_CheckedChanged);
+            this.NMedusa3.CheckedChanged += new System.EventHandler(this.checkBox24_CheckedChanged);
             // 
             // NMedusa2
             // 
@@ -1824,6 +1851,7 @@
             // SLost3
             // 
             this.SLost3.AutoSize = true;
+            this.SLost3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SLost3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SLost3.Location = new System.Drawing.Point(1200, 1299);
             this.SLost3.Name = "SLost3";
@@ -1831,7 +1859,7 @@
             this.SLost3.TabIndex = 243;
             this.SLost3.Text = "Не просмотрено";
             this.SLost3.UseVisualStyleBackColor = true;
-            this.SLost3.CheckedChanged += new System.EventHandler(this.SLost3_CheckedChanged);
+            this.SLost3.CheckedChanged += new System.EventHandler(this.checkBox24_CheckedChanged);
             // 
             // SLost2
             // 
@@ -1891,6 +1919,7 @@
             // SRiddle3
             // 
             this.SRiddle3.AutoSize = true;
+            this.SRiddle3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SRiddle3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SRiddle3.Location = new System.Drawing.Point(1200, 1256);
             this.SRiddle3.Name = "SRiddle3";
@@ -1898,7 +1927,7 @@
             this.SRiddle3.TabIndex = 237;
             this.SRiddle3.Text = "Не просмотрено";
             this.SRiddle3.UseVisualStyleBackColor = true;
-            this.SRiddle3.CheckedChanged += new System.EventHandler(this.SRiddle3_CheckedChanged);
+            this.SRiddle3.CheckedChanged += new System.EventHandler(this.checkBox24_CheckedChanged);
             // 
             // SRiddle2
             // 
@@ -1948,6 +1977,7 @@
             // OFormula3
             // 
             this.OFormula3.AutoSize = true;
+            this.OFormula3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.OFormula3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.OFormula3.Location = new System.Drawing.Point(1200, 1213);
             this.OFormula3.Name = "OFormula3";
@@ -1955,7 +1985,7 @@
             this.OFormula3.TabIndex = 231;
             this.OFormula3.Text = "Не просмотрено";
             this.OFormula3.UseVisualStyleBackColor = true;
-            this.OFormula3.CheckedChanged += new System.EventHandler(this.OFormula3_CheckedChanged);
+            this.OFormula3.CheckedChanged += new System.EventHandler(this.checkBox24_CheckedChanged);
             // 
             // OFormula2
             // 
@@ -2005,6 +2035,7 @@
             // KTea3
             // 
             this.KTea3.AutoSize = true;
+            this.KTea3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.KTea3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.KTea3.Location = new System.Drawing.Point(1200, 1170);
             this.KTea3.Name = "KTea3";
@@ -2012,7 +2043,7 @@
             this.KTea3.TabIndex = 225;
             this.KTea3.Text = "Не просмотрено";
             this.KTea3.UseVisualStyleBackColor = true;
-            this.KTea3.CheckedChanged += new System.EventHandler(this.KTea3_CheckedChanged);
+            this.KTea3.CheckedChanged += new System.EventHandler(this.checkBox24_CheckedChanged);
             // 
             // KTea2
             // 
@@ -2062,6 +2093,7 @@
             // KTree3
             // 
             this.KTree3.AutoSize = true;
+            this.KTree3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.KTree3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.KTree3.Location = new System.Drawing.Point(1200, 1127);
             this.KTree3.Name = "KTree3";
@@ -2069,7 +2101,7 @@
             this.KTree3.TabIndex = 219;
             this.KTree3.Text = "Не просмотрено";
             this.KTree3.UseVisualStyleBackColor = true;
-            this.KTree3.CheckedChanged += new System.EventHandler(this.KTree3_CheckedChanged);
+            this.KTree3.CheckedChanged += new System.EventHandler(this.checkBox24_CheckedChanged);
             // 
             // KTree2
             // 
@@ -2109,6 +2141,7 @@
             // TTiger3
             // 
             this.TTiger3.AutoSize = true;
+            this.TTiger3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.TTiger3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.TTiger3.Location = new System.Drawing.Point(1200, 1084);
             this.TTiger3.Name = "TTiger3";
@@ -2116,7 +2149,7 @@
             this.TTiger3.TabIndex = 213;
             this.TTiger3.Text = "Не просмотрено";
             this.TTiger3.UseVisualStyleBackColor = true;
-            this.TTiger3.CheckedChanged += new System.EventHandler(this.TTiger3_CheckedChanged);
+            this.TTiger3.CheckedChanged += new System.EventHandler(this.checkBox24_CheckedChanged);
             // 
             // TTiger2
             // 
@@ -2175,6 +2208,7 @@
             // SMail3
             // 
             this.SMail3.AutoSize = true;
+            this.SMail3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SMail3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SMail3.Location = new System.Drawing.Point(1200, 1041);
             this.SMail3.Name = "SMail3";
@@ -2182,7 +2216,7 @@
             this.SMail3.TabIndex = 207;
             this.SMail3.Text = "Не просмотрено";
             this.SMail3.UseVisualStyleBackColor = true;
-            this.SMail3.CheckedChanged += new System.EventHandler(this.SMail3_CheckedChanged);
+            this.SMail3.CheckedChanged += new System.EventHandler(this.checkBox24_CheckedChanged);
             // 
             // SMail2
             // 
@@ -2232,6 +2266,7 @@
             // label49
             // 
             this.label49.BackColor = System.Drawing.Color.PaleGreen;
+            this.label49.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label49.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label49.Location = new System.Drawing.Point(195, 956);
             this.label49.Name = "label49";
@@ -2240,6 +2275,8 @@
             this.label49.Text = "Август\r\n(20 - 25 числа)\r\n\r\nНажми для подробностей";
             this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label49.Click += new System.EventHandler(this.label49_Click);
+            this.label49.MouseLeave += new System.EventHandler(this.label49_MouseLeave);
+            this.label49.MouseMove += new System.Windows.Forms.MouseEventHandler(this.label49_MouseMove);
             // 
             // label41
             // 
@@ -2340,6 +2377,7 @@
             // STime3
             // 
             this.STime3.AutoSize = true;
+            this.STime3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.STime3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.STime3.Location = new System.Drawing.Point(1200, 998);
             this.STime3.Name = "STime3";
@@ -2347,7 +2385,7 @@
             this.STime3.TabIndex = 161;
             this.STime3.Text = "Не просмотрено";
             this.STime3.UseVisualStyleBackColor = true;
-            this.STime3.CheckedChanged += new System.EventHandler(this.STime3_CheckedChanged);
+            this.STime3.CheckedChanged += new System.EventHandler(this.checkBox24_CheckedChanged);
             // 
             // STime2
             // 
@@ -2372,6 +2410,7 @@
             // MJiangshi3
             // 
             this.MJiangshi3.AutoSize = true;
+            this.MJiangshi3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MJiangshi3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.MJiangshi3.Location = new System.Drawing.Point(1200, 955);
             this.MJiangshi3.Name = "MJiangshi3";
@@ -2379,7 +2418,7 @@
             this.MJiangshi3.TabIndex = 155;
             this.MJiangshi3.Text = "Не просмотрено";
             this.MJiangshi3.UseVisualStyleBackColor = true;
-            this.MJiangshi3.CheckedChanged += new System.EventHandler(this.MJiangshi3_CheckedChanged);
+            this.MJiangshi3.CheckedChanged += new System.EventHandler(this.checkBox24_CheckedChanged);
             // 
             // MJiangshi2
             // 
@@ -2735,6 +2774,7 @@
             this.checkBox24.Text = "Не просмотрено";
             this.checkBox24.UseVisualStyleBackColor = true;
             this.checkBox24.Visible = false;
+            this.checkBox24.CheckedChanged += new System.EventHandler(this.checkBox24_CheckedChanged);
             // 
             // label97
             // 
@@ -2784,6 +2824,7 @@
             // TPhoenix3
             // 
             this.TPhoenix3.AutoSize = true;
+            this.TPhoenix3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.TPhoenix3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.TPhoenix3.Location = new System.Drawing.Point(1200, 654);
             this.TPhoenix3.Name = "TPhoenix3";
@@ -2791,7 +2832,7 @@
             this.TPhoenix3.TabIndex = 113;
             this.TPhoenix3.Text = "Не просмотрено";
             this.TPhoenix3.UseVisualStyleBackColor = true;
-            this.TPhoenix3.CheckedChanged += new System.EventHandler(this.TPhoenix3_CheckedChanged);
+            this.TPhoenix3.CheckedChanged += new System.EventHandler(this.checkBox24_CheckedChanged);
             // 
             // TPhoenix2
             // 
@@ -2839,6 +2880,7 @@
             // KWind3
             // 
             this.KWind3.AutoSize = true;
+            this.KWind3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.KWind3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.KWind3.Location = new System.Drawing.Point(1200, 611);
             this.KWind3.Name = "KWind3";
@@ -2846,7 +2888,7 @@
             this.KWind3.TabIndex = 107;
             this.KWind3.Text = "Не просмотрено";
             this.KWind3.UseVisualStyleBackColor = true;
-            this.KWind3.CheckedChanged += new System.EventHandler(this.KWind3_CheckedChanged);
+            this.KWind3.CheckedChanged += new System.EventHandler(this.checkBox24_CheckedChanged);
             // 
             // KWind2
             // 
@@ -2894,6 +2936,7 @@
             // KBee3
             // 
             this.KBee3.AutoSize = true;
+            this.KBee3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.KBee3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.KBee3.Location = new System.Drawing.Point(1200, 568);
             this.KBee3.Name = "KBee3";
@@ -2901,7 +2944,7 @@
             this.KBee3.TabIndex = 101;
             this.KBee3.Text = "Не просмотрено";
             this.KBee3.UseVisualStyleBackColor = true;
-            this.KBee3.CheckedChanged += new System.EventHandler(this.KBee3_CheckedChanged);
+            this.KBee3.CheckedChanged += new System.EventHandler(this.checkBox24_CheckedChanged);
             // 
             // KBee2
             // 
@@ -2961,6 +3004,7 @@
             // KWater3
             // 
             this.KWater3.AutoSize = true;
+            this.KWater3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.KWater3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.KWater3.Location = new System.Drawing.Point(1200, 525);
             this.KWater3.Name = "KWater3";
@@ -2968,7 +3012,7 @@
             this.KWater3.TabIndex = 95;
             this.KWater3.Text = "Не просмотрено";
             this.KWater3.UseVisualStyleBackColor = true;
-            this.KWater3.CheckedChanged += new System.EventHandler(this.KWater3_CheckedChanged);
+            this.KWater3.CheckedChanged += new System.EventHandler(this.checkBox24_CheckedChanged);
             // 
             // KWater2
             // 
@@ -3146,6 +3190,7 @@
             // KSand3
             // 
             this.KSand3.AutoSize = true;
+            this.KSand3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.KSand3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.KSand3.Location = new System.Drawing.Point(1200, 396);
             this.KSand3.Name = "KSand3";
@@ -3153,7 +3198,7 @@
             this.KSand3.TabIndex = 77;
             this.KSand3.Text = "Не просмотрено";
             this.KSand3.UseVisualStyleBackColor = true;
-            this.KSand3.CheckedChanged += new System.EventHandler(this.KSand3_CheckedChanged);
+            this.KSand3.CheckedChanged += new System.EventHandler(this.checkBox24_CheckedChanged);
             // 
             // KSand2
             // 
@@ -3203,6 +3248,7 @@
             // TCat3
             // 
             this.TCat3.AutoSize = true;
+            this.TCat3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.TCat3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.TCat3.Location = new System.Drawing.Point(1200, 353);
             this.TCat3.Name = "TCat3";
@@ -3210,7 +3256,7 @@
             this.TCat3.TabIndex = 71;
             this.TCat3.Text = "Не просмотрено";
             this.TCat3.UseVisualStyleBackColor = true;
-            this.TCat3.CheckedChanged += new System.EventHandler(this.TCat3_CheckedChanged);
+            this.TCat3.CheckedChanged += new System.EventHandler(this.checkBox24_CheckedChanged);
             // 
             // TCat2
             // 
@@ -3260,6 +3306,7 @@
             // NSnake3
             // 
             this.NSnake3.AutoSize = true;
+            this.NSnake3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.NSnake3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.NSnake3.Location = new System.Drawing.Point(1200, 310);
             this.NSnake3.Name = "NSnake3";
@@ -3267,7 +3314,7 @@
             this.NSnake3.TabIndex = 65;
             this.NSnake3.Text = "Не просмотрено";
             this.NSnake3.UseVisualStyleBackColor = true;
-            this.NSnake3.CheckedChanged += new System.EventHandler(this.NSnake3_CheckedChanged);
+            this.NSnake3.CheckedChanged += new System.EventHandler(this.checkBox24_CheckedChanged);
             // 
             // NSnake2
             // 
@@ -3317,6 +3364,7 @@
             // SMonkey3
             // 
             this.SMonkey3.AutoSize = true;
+            this.SMonkey3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SMonkey3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SMonkey3.Location = new System.Drawing.Point(1200, 267);
             this.SMonkey3.Name = "SMonkey3";
@@ -3324,7 +3372,7 @@
             this.SMonkey3.TabIndex = 59;
             this.SMonkey3.Text = "Не просмотрено";
             this.SMonkey3.UseVisualStyleBackColor = true;
-            this.SMonkey3.CheckedChanged += new System.EventHandler(this.SMonkey3_CheckedChanged);
+            this.SMonkey3.CheckedChanged += new System.EventHandler(this.checkBox24_CheckedChanged);
             // 
             // SMonkey2
             // 
@@ -3384,6 +3432,7 @@
             // MSnail3
             // 
             this.MSnail3.AutoSize = true;
+            this.MSnail3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MSnail3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.MSnail3.Location = new System.Drawing.Point(1200, 224);
             this.MSnail3.Name = "MSnail3";
@@ -3391,7 +3440,7 @@
             this.MSnail3.TabIndex = 53;
             this.MSnail3.Text = "Не просмотрено";
             this.MSnail3.UseVisualStyleBackColor = true;
-            this.MSnail3.CheckedChanged += new System.EventHandler(this.MSnail3_CheckedChanged);
+            this.MSnail3.CheckedChanged += new System.EventHandler(this.checkBox24_CheckedChanged);
             // 
             // MSnail2
             // 
@@ -3442,6 +3491,7 @@
             // KFlower3
             // 
             this.KFlower3.AutoSize = true;
+            this.KFlower3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.KFlower3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.KFlower3.Location = new System.Drawing.Point(1200, 181);
             this.KFlower3.Name = "KFlower3";
@@ -3449,7 +3499,7 @@
             this.KFlower3.TabIndex = 47;
             this.KFlower3.Text = "Не просмотрено";
             this.KFlower3.UseVisualStyleBackColor = true;
-            this.KFlower3.CheckedChanged += new System.EventHandler(this.KFlower3_CheckedChanged);
+            this.KFlower3.CheckedChanged += new System.EventHandler(this.checkBox24_CheckedChanged);
             // 
             // KFlower2
             // 
@@ -3499,6 +3549,7 @@
             // HCrab3
             // 
             this.HCrab3.AutoSize = true;
+            this.HCrab3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.HCrab3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.HCrab3.Location = new System.Drawing.Point(1200, 138);
             this.HCrab3.Name = "HCrab3";
@@ -3506,7 +3557,7 @@
             this.HCrab3.TabIndex = 41;
             this.HCrab3.Text = "Не просмотрено";
             this.HCrab3.UseVisualStyleBackColor = true;
-            this.HCrab3.CheckedChanged += new System.EventHandler(this.HCrab3_CheckedChanged);
+            this.HCrab3.CheckedChanged += new System.EventHandler(this.checkBox24_CheckedChanged);
             // 
             // HCrab2
             // 
@@ -3556,6 +3607,7 @@
             // TFamily3
             // 
             this.TFamily3.AutoSize = true;
+            this.TFamily3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.TFamily3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.TFamily3.Location = new System.Drawing.Point(1200, 95);
             this.TFamily3.Name = "TFamily3";
@@ -3563,7 +3615,7 @@
             this.TFamily3.TabIndex = 35;
             this.TFamily3.Text = "Не просмотрено";
             this.TFamily3.UseVisualStyleBackColor = true;
-            this.TFamily3.CheckedChanged += new System.EventHandler(this.TFamily3_CheckedChanged);
+            this.TFamily3.CheckedChanged += new System.EventHandler(this.checkBox24_CheckedChanged);
             // 
             // TFamily2
             // 
@@ -3623,6 +3675,7 @@
             // KStone3
             // 
             this.KStone3.AutoSize = true;
+            this.KStone3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.KStone3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.KStone3.Location = new System.Drawing.Point(1200, 52);
             this.KStone3.Name = "KStone3";
@@ -3630,7 +3683,7 @@
             this.KStone3.TabIndex = 29;
             this.KStone3.Text = "Не просмотрено";
             this.KStone3.UseVisualStyleBackColor = true;
-            this.KStone3.CheckedChanged += new System.EventHandler(this.KStone3_CheckedChanged);
+            this.KStone3.CheckedChanged += new System.EventHandler(this.checkBox24_CheckedChanged);
             // 
             // KStone2
             // 
@@ -3687,6 +3740,16 @@
             this.KStone.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.TFamily_LinkClicked);
             this.KStone.MouseClick += new System.Windows.Forms.MouseEventHandler(this.KStone_MouseClick);
             // 
+            // label9
+            // 
+            this.label9.BackColor = System.Drawing.Color.Lime;
+            this.label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label9.ForeColor = System.Drawing.Color.DarkGray;
+            this.label9.Location = new System.Drawing.Point(1, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(1413, 2);
+            this.label9.TabIndex = 21;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -3726,33 +3789,14 @@
             this.горячиеКлавишиToolStripMenuItem.Name = "горячиеКлавишиToolStripMenuItem";
             this.горячиеКлавишиToolStripMenuItem.Size = new System.Drawing.Size(217, 28);
             this.горячиеКлавишиToolStripMenuItem.Text = "Горячие клавиши";
-            this.горячиеКлавишиToolStripMenuItem.Click += new System.EventHandler(this.горячиеКлавишиToolStripMenuItem_Click);
-            // 
-            // label161
-            // 
-            this.label161.BackColor = System.Drawing.Color.Lime;
-            this.label161.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label161.ForeColor = System.Drawing.Color.DarkGray;
-            this.label161.Location = new System.Drawing.Point(413, 1419);
-            this.label161.Name = "label161";
-            this.label161.Size = new System.Drawing.Size(1001, 2);
-            this.label161.TabIndex = 261;
-            // 
-            // label9
-            // 
-            this.label9.BackColor = System.Drawing.Color.Lime;
-            this.label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label9.ForeColor = System.Drawing.Color.DarkGray;
-            this.label9.Location = new System.Drawing.Point(1, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(1413, 2);
-            this.label9.TabIndex = 21;
+            this.горячиеКлавишиToolStripMenuItem.Click += new System.EventHandler(this.HotKeys_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(1454, 801);
             this.Controls.Add(this.label5);
